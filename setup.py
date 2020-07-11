@@ -7,11 +7,11 @@ except ImportError:
 
 
 setup(name='livetest',
-      version='0.5',
+      version='3.0.5',
       description='Test against a live site with an API like Paste WebTest',
       long_description=file('README.rst').read(),
       classifiers=[
-          "Development Status :: 4 - Beta",
+          "Development Status :: Beta",
           "Environment :: Web Environment",
           "Framework :: Paste",
           "Intended Audience :: Developers",
@@ -20,13 +20,13 @@ setup(name='livetest',
           "Topic :: Software Development :: Testing"
       ],
       keywords='http integration wsgi test unit tests testing web functional',
-      author='Scott Torborg',
+      author='Scott Torborg','Folkert Meeuw'
       author_email='storborg@mit.edu',
-      url='http://github.com/storborg/livetest',
+      url='http://github.com/storborg/livetest',url='http://github.com/storborg/livetest3'
       license='MIT',
       packages=find_packages(exclude=['ez_setup', 'tests']),
       include_package_data=True,
       install_requires=['WebTest>=1.2'],
-      tests_require=['nose>=0.10'],
+      tests_require=['nose>=1.7.3'],
       test_suite='nose.collector',
       zip_safe=False)
