@@ -4,7 +4,7 @@ import time
 import sys
 import unittest
 from wsgiref.simple_server import make_server
-import livetest
+import livetest3
 try:
     from cStringIO import StringIO
 except ImportError:
