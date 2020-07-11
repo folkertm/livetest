@@ -1,5 +1,5 @@
 """
-LiveTest - Like WebTest, but on a live site.
+LiveTest3 - Like WebTest, but on a live site.
 
 Setup an app to test against with just a hostname:
 
@@ -29,7 +29,7 @@ Submit forms:
 
 Test stuff in the response:
 
->>> resp.mustcontain('livetest', 'Index', 'Package')
+>>> resp.mustcontain('livetest3', 'Index', 'Package')
 >>> resp.status
 '200 OK'
 
