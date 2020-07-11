@@ -3,8 +3,8 @@ LiveTest - Like WebTest, but on a live site.
 
 Setup an app to test against with just a hostname:
 
->>> import livetest
->>> app = livetest.TestApp('pypi.python.org')
+>>> import livetest3
+>>> app = livetest3.TestApp('pypi.python.org')
 
 Make requests just like WebTest:
 
@@ -35,8 +35,8 @@ Test stuff in the response:
 
 """
 
-__author__ = 'storborg@mit.edu'
-__version__ = '0.5'
+__author__ = 'storborg@mit.edu, folkert.meeuw@googlemail.com'
+__version__ = '0.5, 3.0.5'
 
 import sys
 import webtest
@@ -107,7 +107,7 @@ class TestApp(webtest.TestApp):
         for header in res.headers.getall('set-cookie'):
             try:
                 c = BaseCookie(header)
-            except CookieError, e:
+            except CookieError as e:
                 raise CookieError(
                     "Could not parse cookie header %r: %s" % (header, e))
             for key, morsel in c.items():
