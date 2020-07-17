@@ -1,3 +1,9 @@
+Fork Notes, 2020/07/17; 12:15 MESZ;
+
+Writing the setup script, Python 3.7!
+
+
+
 Fork Notes, 2020/07/11; 12:35 MESZ:
 
 First, the links to the pythonpaste.org website are dead. Second, the original is incompatible with Python Release 3, https://www.python.org/download/releases/3.0/. This issue is well known https://github.com/storborg/livetest/issues/8. On the English Wikipedia you can find the following article https://en.wikipedia.org/wiki/Python_Paste. There Ian Bicking is mentioned as developer.
