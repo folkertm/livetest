@@ -127,11 +127,11 @@ def goto(self, href, method='get', **args):
     Monkeypatch the TestResponse.goto method so that it doesn't wipe out the
     scheme and host.
     """
-    scheme, host, path, query, fragment = urlparse.urlsplit(href)
+    scheme, host, path, query, fragment = urllib.parse.urlsplit(href)
     # We
     fragment = ''
-    href = urlparse.urlunsplit((scheme, host, path, query, fragment))
-    href = urlparse.urljoin(self.request.url, href)
+    href = urllib.parse.urlunsplit((scheme, host, path, query, fragment))
+    href = urllib.parse.urljoin(self.request.url, href)
     method = method.lower()
     assert method in ('get', 'post'), (
         'Only "get" or "post" are allowed for method (you gave %r)'
