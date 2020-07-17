@@ -1,4 +1,4 @@
-Fork Notes, 2020/07/17; 12:15 MESZ;
+Fork Notes, 2020/07/17; 12:15 MESZ:
 
 Writing the setup script for Python Release 3.7.
 
