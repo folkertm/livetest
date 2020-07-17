@@ -4,7 +4,9 @@ Writing the setup script for Python Release 3.7.
 
 Read: https://packaging.python.org/guides/making-a-pypi-friendly-readme/
 
-License: https://mit-license.org/
+MIT-License Home: https://mit-license.org/
+
+MIT-License on GitHub: https://github.com/remy/mit-license
 
 
 Fork Notes, 2020/07/11; 12:35 MESZ:
