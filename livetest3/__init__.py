@@ -42,8 +42,8 @@ import sys
 import webtest
 import http.client
 import urllib.parse
-import http.cookies as cookies
-import http.cookiejar as cookiejar
+import http.cookies
+import http.cookiejar
 
 conn_classes = {'http': http.client.HTTPConnection,
                 'https': http.client.HTTPSConnection}
@@ -62,6 +62,10 @@ class TestApp(webtest.TestApp):
         self.conn = {}
         self._load_conn(scheme)
         self.extra_environ = {}
+        if cookiejar is None:
+            self.cookiejar = CookieJar()
+        else:
+            self.cookiejar = cookiejar
         self.reset()
 
     def _do_httplib_request(self, req):
