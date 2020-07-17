@@ -41,7 +41,7 @@ __version__ = '0.1.0'
 import sys
 import webtest
 import http.client
-import urllib.parse
+from urllib.parse import urlparse
 from http.cookies import BaseCookie, CookieError
 from http.cookiejar import CookieJar
 
