@@ -70,7 +70,7 @@ class TestApp(webtest.TestApp):
 
     def _do_httplib_request(self, req):
         "Convert WebOb Request to httplib request."
-        headers = dict((name, val) for name, val in req.headers.iteritems()
+        headers = dict((name, val) for name, val in req.headers.items()
                        if name != 'Host')
         if req.scheme not in self.conn:
             self._load_conn(req.scheme)
