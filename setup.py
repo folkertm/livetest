@@ -7,7 +7,7 @@ except ImportError:
 
 
 setup(name='livetest3',
-      version='1.0.0',
+      version='0.1.0',
       description='Test against a live site with an API like Paste WebTest',
       long_description=file('README.rst').read(),
       classifiers=[
@@ -23,7 +23,7 @@ setup(name='livetest3',
       author='Folkert Meeuw',
       author_email='folkert.meeuw@googlemail.com',
       url='http://github.com/folkertm/livetest3',
-      license='MIT',
+      license='',
       packages=find_packages(exclude=['ez_setup', 'tests']),
       include_package_data=True,
       install_requires=['WebTest>=1.2'],
