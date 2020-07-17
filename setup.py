@@ -5,11 +5,18 @@ except ImportError:
     use_setuptools()
     from setuptools import setup, find_packages
 
+# read the contents of your README file
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
 
+    
 setup(name='livetest3',
       version='0.1.0',
       description='Test against a live site with an API like Paste WebTest',
-      long_description=file('README.rst').read(),
+      long_description=long_description,
+      long_description_content_type='text/markdown',
       classifiers=[
           "Development Status :: Beta",
           "Environment :: Web Environment",
