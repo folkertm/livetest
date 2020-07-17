@@ -35,17 +35,17 @@ Test stuff in the response:
 
 """
 
-__author__ = 'storborg@mit.edu, folkert.meeuw@googlemail.com'
-__version__ = '0.5, 3.0.5'
+__author__ = 'folkert.meeuw@googlemail.com'
+__version__ = '0.1.0'
 
 import sys
 import webtest
-import httplib
+import http.client
 import urlparse
 from Cookie import BaseCookie, CookieError
 
-conn_classes = {'http': httplib.HTTPConnection,
-                'https': httplib.HTTPSConnection}
+conn_classes = {'http': http.client.HTTPConnection,
+                'https': http.client.HTTPSConnection}
 
 
 class TestApp(webtest.TestApp):
