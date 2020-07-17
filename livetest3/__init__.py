@@ -42,6 +42,7 @@ import sys
 import webtest
 import http.client
 from urllib.parse import urlparse
+from urllib.parse import urlsplit
 from http.cookies import BaseCookie, CookieError
 from http.cookiejar import CookieJar
 
