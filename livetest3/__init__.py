@@ -41,7 +41,7 @@ __version__ = '0.1.0'
 import sys
 import webtest
 import http.client
-import urlparse
+import urllib.parse
 from Cookie import BaseCookie, CookieError
 
 conn_classes = {'http': http.client.HTTPConnection,
