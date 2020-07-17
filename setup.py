@@ -6,8 +6,8 @@ except ImportError:
     from setuptools import setup, find_packages
 
 
-setup(name='livetest',
-      version='3.0.5',
+setup(name='livetest3',
+      version='1.0.0',
       description='Test against a live site with an API like Paste WebTest',
       long_description=file('README.rst').read(),
       classifiers=[
