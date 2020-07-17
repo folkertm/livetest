@@ -43,7 +43,7 @@ import webtest
 import http.client
 import urllib.parse
 import http.cookies
-import http.cookiejar
+from http.cookiejar import CookieJar
 
 conn_classes = {'http': http.client.HTTPConnection,
                 'https': http.client.HTTPSConnection}
