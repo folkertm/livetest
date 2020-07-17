@@ -20,9 +20,9 @@ setup(name='livetest',
           "Topic :: Software Development :: Testing"
       ],
       keywords='http integration wsgi test unit tests testing web functional',
-      author='Scott Torborg','Folkert Meeuw'
-      author_email='storborg@mit.edu',
-      url='http://github.com/storborg/livetest',url='http://github.com/storborg/livetest3'
+      author='Folkert Meeuw'
+      author_email='folkert.meeuw@googlemail.com'
+      url='http://github.com/folkertm/livetest3'
       license='MIT',
       packages=find_packages(exclude=['ez_setup', 'tests']),
       include_package_data=True,
