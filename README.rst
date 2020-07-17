@@ -1,7 +1,7 @@
 Fork Notes, 2020/07/17; 12:15 MESZ;
 
-Writing the setup script, Python 3.7!
-
+Writing the setup script for Python Release 3.7.
+Read https://packaging.python.org/guides/making-a-pypi-friendly-readme/
 
 
 Fork Notes, 2020/07/11; 12:35 MESZ:
