@@ -21,7 +21,6 @@ setup(name='livetest',
       ],
       keywords='http integration wsgi test unit tests testing web functional',
       author='Folkert Meeuw'
-      author_email='folkert.meeuw@googlemail.com'
       url='http://github.com/folkertm/livetest3'
       license='MIT',
       packages=find_packages(exclude=['ez_setup', 'tests']),
