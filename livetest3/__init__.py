@@ -42,7 +42,7 @@ import sys
 import webtest
 import http.client
 import urllib.parse
-from Cookie import BaseCookie, CookieError
+import http.cookies
 
 conn_classes = {'http': http.client.HTTPConnection,
                 'https': http.client.HTTPSConnection}
